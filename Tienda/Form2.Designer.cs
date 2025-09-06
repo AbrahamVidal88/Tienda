@@ -36,11 +36,7 @@
             label1 = new Label();
             pictureBox1 = new PictureBox();
             menuVertical = new Panel();
-            submenu = new Panel();
-            btnEliminarp = new Button();
-            btnActualizar = new Button();
-            btnAgregarp = new Button();
-            btnVisualizarp = new Button();
+            btnproducts = new Button();
             btnsalir = new PictureBox();
             panel6 = new Panel();
             btnreportes = new Button();
@@ -51,20 +47,18 @@
             panel3 = new Panel();
             btncompras = new Button();
             panel1 = new Panel();
-            btnproducts = new Button();
             jpanel = new Panel();
-            panelContenedor = new Panel();
+            panelcontenedor = new Panel();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             menuVertical.SuspendLayout();
-            submenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)btnsalir).BeginInit();
-            jpanel.SuspendLayout();
+            panelcontenedor.SuspendLayout();
             SuspendLayout();
             // 
             // btnAgregarProducto
             // 
             btnAgregarProducto.BackColor = Color.White;
-            btnAgregarProducto.Location = new Point(42, 386);
+            btnAgregarProducto.Location = new Point(54, 545);
             btnAgregarProducto.Name = "btnAgregarProducto";
             btnAgregarProducto.Size = new Size(130, 40);
             btnAgregarProducto.TabIndex = 0;
@@ -95,116 +89,46 @@
             // 
             // menuVertical
             // 
-            menuVertical.BackColor = Color.FromArgb(26, 32, 40);
-            menuVertical.Controls.Add(submenu);
+            menuVertical.BackColor = Color.White;
+            menuVertical.BorderStyle = BorderStyle.FixedSingle;
+            menuVertical.Controls.Add(panelcontenedor);
             menuVertical.Controls.Add(btnAgregarProducto);
             menuVertical.Controls.Add(btnsalir);
             menuVertical.Controls.Add(panel6);
-            menuVertical.Controls.Add(btnreportes);
             menuVertical.Controls.Add(panel5);
-            menuVertical.Controls.Add(btnpagos);
             menuVertical.Controls.Add(panel4);
-            menuVertical.Controls.Add(btnpuntoventa);
             menuVertical.Controls.Add(panel3);
-            menuVertical.Controls.Add(btncompras);
             menuVertical.Controls.Add(panel1);
-            menuVertical.Controls.Add(btnproducts);
             menuVertical.Controls.Add(pictureBox1);
             menuVertical.Controls.Add(label1);
             menuVertical.Dock = DockStyle.Left;
             menuVertical.Location = new Point(0, 0);
             menuVertical.Name = "menuVertical";
-            menuVertical.Size = new Size(220, 616);
+            menuVertical.Size = new Size(244, 718);
             menuVertical.TabIndex = 3;
             // 
-            // submenu
+            // btnproducts
             // 
-            submenu.Controls.Add(btnEliminarp);
-            submenu.Controls.Add(btnActualizar);
-            submenu.Controls.Add(btnAgregarp);
-            submenu.Controls.Add(btnVisualizarp);
-            submenu.Location = new Point(57, 213);
-            submenu.Name = "submenu";
-            submenu.Size = new Size(163, 134);
-            submenu.TabIndex = 13;
-            submenu.Visible = false;
-            // 
-            // btnEliminarp
-            // 
-            btnEliminarp.BackColor = Color.FromArgb(26, 32, 40);
-            btnEliminarp.FlatAppearance.BorderSize = 0;
-            btnEliminarp.FlatAppearance.MouseOverBackColor = Color.FromArgb(0, 80, 200);
-            btnEliminarp.FlatStyle = FlatStyle.Flat;
-            btnEliminarp.Font = new Font("Century Gothic", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnEliminarp.ForeColor = Color.White;
-            btnEliminarp.Image = (Image)resources.GetObject("btnEliminarp.Image");
-            btnEliminarp.ImageAlign = ContentAlignment.MiddleLeft;
-            btnEliminarp.Location = new Point(0, 102);
-            btnEliminarp.Name = "btnEliminarp";
-            btnEliminarp.Size = new Size(163, 29);
-            btnEliminarp.TabIndex = 14;
-            btnEliminarp.Text = "Eliminar";
-            btnEliminarp.UseVisualStyleBackColor = false;
-            btnEliminarp.Click += btnEliminarp_Click;
-            // 
-            // btnActualizar
-            // 
-            btnActualizar.BackColor = Color.FromArgb(26, 32, 40);
-            btnActualizar.FlatAppearance.BorderSize = 0;
-            btnActualizar.FlatAppearance.MouseOverBackColor = Color.FromArgb(0, 80, 200);
-            btnActualizar.FlatStyle = FlatStyle.Flat;
-            btnActualizar.Font = new Font("Century Gothic", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnActualizar.ForeColor = Color.White;
-            btnActualizar.Image = (Image)resources.GetObject("btnActualizar.Image");
-            btnActualizar.ImageAlign = ContentAlignment.MiddleLeft;
-            btnActualizar.Location = new Point(0, 70);
-            btnActualizar.Name = "btnActualizar";
-            btnActualizar.Size = new Size(163, 29);
-            btnActualizar.TabIndex = 16;
-            btnActualizar.Text = "Actualizar";
-            btnActualizar.UseVisualStyleBackColor = false;
-            btnActualizar.Click += btnActualizar_Click_1;
-            // 
-            // btnAgregarp
-            // 
-            btnAgregarp.BackColor = Color.FromArgb(26, 32, 40);
-            btnAgregarp.FlatAppearance.BorderSize = 0;
-            btnAgregarp.FlatAppearance.MouseOverBackColor = Color.FromArgb(0, 80, 200);
-            btnAgregarp.FlatStyle = FlatStyle.Flat;
-            btnAgregarp.Font = new Font("Century Gothic", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnAgregarp.ForeColor = Color.White;
-            btnAgregarp.Image = (Image)resources.GetObject("btnAgregarp.Image");
-            btnAgregarp.ImageAlign = ContentAlignment.MiddleLeft;
-            btnAgregarp.Location = new Point(0, 38);
-            btnAgregarp.Name = "btnAgregarp";
-            btnAgregarp.Size = new Size(163, 29);
-            btnAgregarp.TabIndex = 15;
-            btnAgregarp.Text = "Agregar";
-            btnAgregarp.UseVisualStyleBackColor = false;
-            btnAgregarp.Click += btnAgregarp_Click_1;
-            // 
-            // btnVisualizarp
-            // 
-            btnVisualizarp.BackColor = Color.FromArgb(26, 32, 40);
-            btnVisualizarp.FlatAppearance.BorderSize = 0;
-            btnVisualizarp.FlatAppearance.MouseOverBackColor = Color.FromArgb(0, 80, 200);
-            btnVisualizarp.FlatStyle = FlatStyle.Flat;
-            btnVisualizarp.Font = new Font("Century Gothic", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnVisualizarp.ForeColor = Color.White;
-            btnVisualizarp.Image = (Image)resources.GetObject("btnVisualizarp.Image");
-            btnVisualizarp.ImageAlign = ContentAlignment.MiddleLeft;
-            btnVisualizarp.Location = new Point(0, 3);
-            btnVisualizarp.Name = "btnVisualizarp";
-            btnVisualizarp.Size = new Size(163, 29);
-            btnVisualizarp.TabIndex = 14;
-            btnVisualizarp.Text = "Visualizar";
-            btnVisualizarp.UseVisualStyleBackColor = false;
-            btnVisualizarp.Click += btnVisualizarp_Click;
+            btnproducts.BackColor = Color.White;
+            btnproducts.FlatAppearance.BorderSize = 0;
+            btnproducts.FlatAppearance.MouseOverBackColor = Color.Gainsboro;
+            btnproducts.FlatStyle = FlatStyle.Flat;
+            btnproducts.Font = new Font("Century Gothic", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnproducts.ForeColor = Color.Black;
+            btnproducts.Image = (Image)resources.GetObject("btnproducts.Image");
+            btnproducts.ImageAlign = ContentAlignment.MiddleLeft;
+            btnproducts.Location = new Point(27, 7);
+            btnproducts.Name = "btnproducts";
+            btnproducts.Size = new Size(214, 59);
+            btnproducts.TabIndex = 0;
+            btnproducts.Text = "Productos";
+            btnproducts.UseVisualStyleBackColor = false;
+            btnproducts.Click += btnproducts_Click;
             // 
             // btnsalir
             // 
-            btnsalir.Image = (Image)resources.GetObject("btnsalir.Image");
-            btnsalir.Location = new Point(12, 550);
+            btnsalir.Image = Properties.Resources.logout_5171462;
+            btnsalir.Location = new Point(54, 634);
             btnsalir.Name = "btnsalir";
             btnsalir.Size = new Size(76, 54);
             btnsalir.SizeMode = PictureBoxSizeMode.Zoom;
@@ -214,154 +138,143 @@
             // 
             // panel6
             // 
-            panel6.BackColor = Color.FromArgb(0, 80, 200);
-            panel6.Location = new Point(2, 318);
+            panel6.BackColor = Color.Black;
+            panel6.Location = new Point(-1, 438);
             panel6.Name = "panel6";
-            panel6.Size = new Size(10, 29);
+            panel6.Size = new Size(31, 59);
             panel6.TabIndex = 11;
+            panel6.Paint += panel6_Paint;
             // 
             // btnreportes
             // 
-            btnreportes.BackColor = Color.FromArgb(26, 32, 40);
+            btnreportes.BackColor = Color.White;
             btnreportes.FlatAppearance.BorderSize = 0;
-            btnreportes.FlatAppearance.MouseOverBackColor = Color.FromArgb(0, 80, 200);
+            btnreportes.FlatAppearance.MouseOverBackColor = Color.Gainsboro;
             btnreportes.FlatStyle = FlatStyle.Flat;
             btnreportes.Font = new Font("Century Gothic", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnreportes.ForeColor = Color.White;
+            btnreportes.ForeColor = Color.Black;
             btnreportes.Image = (Image)resources.GetObject("btnreportes.Image");
             btnreportes.ImageAlign = ContentAlignment.MiddleLeft;
-            btnreportes.Location = new Point(12, 318);
+            btnreportes.Location = new Point(27, 267);
             btnreportes.Name = "btnreportes";
-            btnreportes.Size = new Size(208, 29);
+            btnreportes.Size = new Size(214, 59);
             btnreportes.TabIndex = 10;
             btnreportes.Text = "Reportes";
             btnreportes.UseVisualStyleBackColor = false;
+            btnreportes.Click += btnreportes_Click;
             // 
             // panel5
             // 
-            panel5.BackColor = Color.FromArgb(0, 80, 200);
-            panel5.Location = new Point(2, 283);
+            panel5.BackColor = Color.Black;
+            panel5.Location = new Point(0, 373);
             panel5.Name = "panel5";
-            panel5.Size = new Size(10, 29);
+            panel5.Size = new Size(30, 59);
             panel5.TabIndex = 9;
             // 
             // btnpagos
             // 
-            btnpagos.BackColor = Color.FromArgb(26, 32, 40);
+            btnpagos.BackColor = Color.White;
             btnpagos.FlatAppearance.BorderSize = 0;
-            btnpagos.FlatAppearance.MouseOverBackColor = Color.FromArgb(0, 80, 200);
+            btnpagos.FlatAppearance.MouseOverBackColor = Color.Gainsboro;
             btnpagos.FlatStyle = FlatStyle.Flat;
             btnpagos.Font = new Font("Century Gothic", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnpagos.ForeColor = Color.White;
+            btnpagos.ForeColor = Color.Black;
             btnpagos.Image = (Image)resources.GetObject("btnpagos.Image");
             btnpagos.ImageAlign = ContentAlignment.MiddleLeft;
-            btnpagos.Location = new Point(12, 283);
+            btnpagos.Location = new Point(27, 202);
             btnpagos.Name = "btnpagos";
-            btnpagos.Size = new Size(208, 29);
+            btnpagos.Size = new Size(214, 59);
             btnpagos.TabIndex = 8;
             btnpagos.Text = "Pagos";
             btnpagos.UseVisualStyleBackColor = false;
             // 
             // panel4
             // 
-            panel4.BackColor = Color.FromArgb(0, 80, 200);
-            panel4.Location = new Point(2, 213);
+            panel4.BackColor = Color.Black;
+            panel4.Location = new Point(0, 243);
             panel4.Name = "panel4";
-            panel4.Size = new Size(10, 29);
+            panel4.Size = new Size(30, 59);
             panel4.TabIndex = 7;
             // 
             // btnpuntoventa
             // 
-            btnpuntoventa.BackColor = Color.FromArgb(26, 32, 40);
+            btnpuntoventa.BackColor = Color.White;
             btnpuntoventa.FlatAppearance.BorderSize = 0;
-            btnpuntoventa.FlatAppearance.MouseOverBackColor = Color.FromArgb(0, 80, 200);
+            btnpuntoventa.FlatAppearance.MouseOverBackColor = Color.Gainsboro;
             btnpuntoventa.FlatStyle = FlatStyle.Flat;
             btnpuntoventa.Font = new Font("Century Gothic", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnpuntoventa.ForeColor = Color.White;
+            btnpuntoventa.ForeColor = Color.Black;
             btnpuntoventa.Image = (Image)resources.GetObject("btnpuntoventa.Image");
             btnpuntoventa.ImageAlign = ContentAlignment.MiddleLeft;
-            btnpuntoventa.Location = new Point(12, 213);
+            btnpuntoventa.Location = new Point(27, 72);
             btnpuntoventa.Name = "btnpuntoventa";
-            btnpuntoventa.Size = new Size(208, 29);
+            btnpuntoventa.Size = new Size(214, 59);
             btnpuntoventa.TabIndex = 6;
             btnpuntoventa.Text = "Punto de Venta";
             btnpuntoventa.TextAlign = ContentAlignment.MiddleRight;
             btnpuntoventa.UseVisualStyleBackColor = false;
+            btnpuntoventa.Click += btnpuntoventa_Click;
             // 
             // panel3
             // 
-            panel3.BackColor = Color.FromArgb(0, 80, 200);
-            panel3.Location = new Point(2, 248);
+            panel3.BackColor = Color.Black;
+            panel3.Location = new Point(0, 308);
             panel3.Name = "panel3";
-            panel3.Size = new Size(10, 29);
+            panel3.Size = new Size(30, 59);
             panel3.TabIndex = 5;
             // 
             // btncompras
             // 
-            btncompras.BackColor = Color.FromArgb(26, 32, 40);
+            btncompras.BackColor = Color.White;
             btncompras.FlatAppearance.BorderSize = 0;
-            btncompras.FlatAppearance.MouseOverBackColor = Color.FromArgb(0, 80, 200);
+            btncompras.FlatAppearance.MouseOverBackColor = Color.Gainsboro;
             btncompras.FlatStyle = FlatStyle.Flat;
             btncompras.Font = new Font("Century Gothic", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btncompras.ForeColor = Color.White;
-            btncompras.Image = (Image)resources.GetObject("btncompras.Image");
+            btncompras.ForeColor = Color.Black;
+            btncompras.Image = Properties.Resources.cash_register_15254168;
             btncompras.ImageAlign = ContentAlignment.MiddleLeft;
-            btncompras.Location = new Point(12, 248);
+            btncompras.Location = new Point(27, 137);
             btncompras.Name = "btncompras";
-            btncompras.Size = new Size(208, 29);
+            btncompras.Size = new Size(214, 59);
             btncompras.TabIndex = 4;
             btncompras.Text = "Compras";
             btncompras.UseVisualStyleBackColor = false;
             // 
             // panel1
             // 
-            panel1.BackColor = Color.FromArgb(0, 80, 200);
-            panel1.Location = new Point(2, 178);
+            panel1.BackColor = Color.Black;
+            panel1.Location = new Point(-7, 178);
             panel1.Name = "panel1";
-            panel1.Size = new Size(10, 29);
+            panel1.Size = new Size(39, 59);
             panel1.TabIndex = 3;
-            // 
-            // btnproducts
-            // 
-            btnproducts.BackColor = Color.FromArgb(26, 32, 40);
-            btnproducts.FlatAppearance.BorderSize = 0;
-            btnproducts.FlatAppearance.MouseOverBackColor = Color.FromArgb(0, 80, 200);
-            btnproducts.FlatStyle = FlatStyle.Flat;
-            btnproducts.Font = new Font("Century Gothic", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnproducts.ForeColor = Color.White;
-            btnproducts.Image = (Image)resources.GetObject("btnproducts.Image");
-            btnproducts.ImageAlign = ContentAlignment.MiddleLeft;
-            btnproducts.Location = new Point(12, 178);
-            btnproducts.Name = "btnproducts";
-            btnproducts.Size = new Size(208, 29);
-            btnproducts.TabIndex = 0;
-            btnproducts.Text = "Productos";
-            btnproducts.UseVisualStyleBackColor = false;
-            btnproducts.Click += btnproducts_Click;
             // 
             // jpanel
             // 
-            jpanel.BackColor = Color.FromArgb(49, 66, 82);
-            jpanel.Controls.Add(panelContenedor);
+            jpanel.BackColor = Color.White;
             jpanel.Dock = DockStyle.Fill;
             jpanel.Location = new Point(0, 0);
             jpanel.Name = "jpanel";
-            jpanel.Size = new Size(887, 616);
+            jpanel.Size = new Size(1349, 718);
             jpanel.TabIndex = 4;
             // 
-            // panelContenedor
+            // panelcontenedor
             // 
-            panelContenedor.Location = new Point(223, 0);
-            panelContenedor.Name = "panelContenedor";
-            panelContenedor.Size = new Size(661, 616);
-            panelContenedor.TabIndex = 0;
+            panelcontenedor.Controls.Add(btnproducts);
+            panelcontenedor.Controls.Add(btnreportes);
+            panelcontenedor.Controls.Add(btnpagos);
+            panelcontenedor.Controls.Add(btnpuntoventa);
+            panelcontenedor.Controls.Add(btncompras);
+            panelcontenedor.Location = new Point(3, 171);
+            panelcontenedor.Name = "panelcontenedor";
+            panelcontenedor.Size = new Size(244, 336);
+            panelcontenedor.TabIndex = 13;
             // 
             // Form2
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = SystemColors.ActiveCaptionText;
-            ClientSize = new Size(887, 616);
+            BackColor = Color.White;
+            ClientSize = new Size(1349, 718);
             Controls.Add(menuVertical);
             Controls.Add(jpanel);
             Name = "Form2";
@@ -369,9 +282,8 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             menuVertical.ResumeLayout(false);
             menuVertical.PerformLayout();
-            submenu.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)btnsalir).EndInit();
-            jpanel.ResumeLayout(false);
+            panelcontenedor.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -393,11 +305,6 @@
         private Panel panel3;
         private Button btncompras;
         private PictureBox btnsalir;
-        private Panel panelContenedor;
-        private Panel submenu;
-        private Button btnActualizar;
-        private Button btnAgregarp;
-        private Button btnVisualizarp;
-        private Button btnEliminarp;
+        private Panel panelcontenedor;
     }
 }

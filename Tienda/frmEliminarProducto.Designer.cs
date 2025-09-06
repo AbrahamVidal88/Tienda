@@ -46,7 +46,8 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(279, 9);
+            label1.ForeColor = Color.White;
+            label1.Location = new Point(341, 39);
             label1.Name = "label1";
             label1.Size = new Size(127, 20);
             label1.TabIndex = 0;
@@ -55,6 +56,7 @@
             // label2
             // 
             label2.AutoSize = true;
+            label2.ForeColor = Color.White;
             label2.Location = new Point(47, 86);
             label2.Name = "label2";
             label2.Size = new Size(154, 20);
@@ -70,7 +72,9 @@
             // 
             // btnBuscarProducto
             // 
-            btnBuscarProducto.BackColor = SystemColors.Highlight;
+            btnBuscarProducto.BackColor = Color.FromArgb(25, 22, 28);
+            btnBuscarProducto.FlatAppearance.BorderSize = 0;
+            btnBuscarProducto.FlatStyle = FlatStyle.Flat;
             btnBuscarProducto.ForeColor = Color.White;
             btnBuscarProducto.Location = new Point(253, 128);
             btnBuscarProducto.Name = "btnBuscarProducto";
@@ -94,6 +98,7 @@
             // 
             // dtgvProductos
             // 
+            dtgvProductos.BackgroundColor = Color.FromArgb(25, 22, 28);
             dtgvProductos.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dtgvProductos.Location = new Point(47, 201);
             dtgvProductos.Name = "dtgvProductos";
@@ -103,6 +108,7 @@
             // 
             // menuStrip1
             // 
+            menuStrip1.BackColor = Color.Black;
             menuStrip1.ImageScalingSize = new Size(20, 20);
             menuStrip1.Items.AddRange(new ToolStripItem[] { opcionesToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
@@ -121,21 +127,21 @@
             // agregarProductoToolStripMenuItem
             // 
             agregarProductoToolStripMenuItem.Name = "agregarProductoToolStripMenuItem";
-            agregarProductoToolStripMenuItem.Size = new Size(224, 26);
+            agregarProductoToolStripMenuItem.Size = new Size(222, 26);
             agregarProductoToolStripMenuItem.Text = "Agregar Producto";
             agregarProductoToolStripMenuItem.Click += agregarProductoToolStripMenuItem_Click;
             // 
             // actualizarProductoToolStripMenuItem
             // 
             actualizarProductoToolStripMenuItem.Name = "actualizarProductoToolStripMenuItem";
-            actualizarProductoToolStripMenuItem.Size = new Size(224, 26);
+            actualizarProductoToolStripMenuItem.Size = new Size(222, 26);
             actualizarProductoToolStripMenuItem.Text = "Actualizar Producto";
             actualizarProductoToolStripMenuItem.Click += actualizarProductoToolStripMenuItem_Click;
             // 
             // menúToolStripMenuItem
             // 
             menúToolStripMenuItem.Name = "menúToolStripMenuItem";
-            menúToolStripMenuItem.Size = new Size(224, 26);
+            menúToolStripMenuItem.Size = new Size(222, 26);
             menúToolStripMenuItem.Text = "Menú";
             menúToolStripMenuItem.Click += menúToolStripMenuItem_Click;
             // 
@@ -143,6 +149,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.Black;
             ClientSize = new Size(800, 450);
             Controls.Add(dtgvProductos);
             Controls.Add(btnEliminarProducto);
@@ -151,6 +158,7 @@
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(menuStrip1);
+            FormBorderStyle = FormBorderStyle.None;
             MainMenuStrip = menuStrip1;
             Name = "frmEliminarProducto";
             Text = "frmEliminarProducto";

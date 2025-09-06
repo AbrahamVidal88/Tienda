@@ -45,11 +45,12 @@
             // 
             // menuStrip1
             // 
+            menuStrip1.BackColor = Color.White;
             menuStrip1.ImageScalingSize = new Size(20, 20);
             menuStrip1.Items.AddRange(new ToolStripItem[] { opcionesToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(653, 28);
+            menuStrip1.Size = new Size(1209, 28);
             menuStrip1.TabIndex = 0;
             menuStrip1.Text = "menuStrip1";
             // 
@@ -84,15 +85,19 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(297, 28);
+            label1.BackColor = Color.White;
+            label1.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label1.ForeColor = Color.Black;
+            label1.Location = new Point(42, 53);
             label1.Name = "label1";
-            label1.Size = new Size(145, 20);
+            label1.Size = new Size(212, 23);
             label1.TabIndex = 1;
             label1.Text = "Actualizar Productos";
             // 
             // label2
             // 
             label2.AutoSize = true;
+            label2.ForeColor = Color.White;
             label2.Location = new Point(27, 102);
             label2.Name = "label2";
             label2.Size = new Size(156, 20);
@@ -101,19 +106,24 @@
             // 
             // txtProducto
             // 
-            txtProducto.Location = new Point(214, 95);
+            txtProducto.BackColor = Color.WhiteSmoke;
+            txtProducto.BorderStyle = BorderStyle.None;
+            txtProducto.Location = new Point(301, 131);
             txtProducto.Name = "txtProducto";
-            txtProducto.Size = new Size(319, 27);
+            txtProducto.Size = new Size(490, 20);
             txtProducto.TabIndex = 3;
             // 
             // btnBuscar
             // 
-            btnBuscar.BackColor = Color.FromArgb(49, 66, 82);
+            btnBuscar.BackColor = Color.FromArgb(25, 22, 28);
+            btnBuscar.FlatAppearance.BorderSize = 0;
+            btnBuscar.FlatAppearance.MouseOverBackColor = Color.Blue;
             btnBuscar.FlatStyle = FlatStyle.Flat;
+            btnBuscar.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnBuscar.ForeColor = Color.White;
-            btnBuscar.Location = new Point(214, 150);
+            btnBuscar.Location = new Point(301, 182);
             btnBuscar.Name = "btnBuscar";
-            btnBuscar.Size = new Size(141, 29);
+            btnBuscar.Size = new Size(231, 42);
             btnBuscar.TabIndex = 4;
             btnBuscar.Text = "Buscar Producto";
             btnBuscar.UseVisualStyleBackColor = false;
@@ -121,11 +131,15 @@
             // 
             // btnActualizar
             // 
-            btnActualizar.BackColor = Color.LightGreen;
-            btnActualizar.ForeColor = Color.Black;
-            btnActualizar.Location = new Point(377, 150);
+            btnActualizar.BackColor = Color.FromArgb(25, 22, 28);
+            btnActualizar.FlatAppearance.BorderSize = 0;
+            btnActualizar.FlatAppearance.MouseOverBackColor = Color.FromArgb(0, 192, 0);
+            btnActualizar.FlatStyle = FlatStyle.Flat;
+            btnActualizar.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnActualizar.ForeColor = Color.White;
+            btnActualizar.Location = new Point(560, 182);
             btnActualizar.Name = "btnActualizar";
-            btnActualizar.Size = new Size(156, 29);
+            btnActualizar.Size = new Size(231, 42);
             btnActualizar.TabIndex = 5;
             btnActualizar.Text = "Actualizar Producto";
             btnActualizar.UseVisualStyleBackColor = false;
@@ -135,19 +149,21 @@
             // 
             dtgvProducto.AllowUserToAddRows = false;
             dtgvProducto.AllowUserToDeleteRows = false;
+            dtgvProducto.BackgroundColor = Color.Gainsboro;
+            dtgvProducto.BorderStyle = BorderStyle.None;
             dtgvProducto.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dtgvProducto.Location = new Point(27, 203);
+            dtgvProducto.Location = new Point(42, 296);
             dtgvProducto.Name = "dtgvProducto";
             dtgvProducto.RowHeadersWidth = 51;
-            dtgvProducto.Size = new Size(589, 209);
+            dtgvProducto.Size = new Size(1118, 421);
             dtgvProducto.TabIndex = 6;
             // 
             // frmActualizarProducto
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.FromArgb(49, 66, 82);
-            ClientSize = new Size(653, 450);
+            BackColor = Color.White;
+            ClientSize = new Size(1209, 754);
             Controls.Add(dtgvProducto);
             Controls.Add(btnActualizar);
             Controls.Add(btnBuscar);
