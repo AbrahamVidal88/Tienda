@@ -13,7 +13,7 @@ namespace Tienda
 {
     public partial class frmVerProducto : Form
     {
-        MySqlConnection conexion = new MySqlConnection("server=localhost;User= root; password=;database=abarrotes");
+        private readonly MySqlConnection conexion = ConexionDb.CrearConexion();
         public frmVerProducto()
         {
             InitializeComponent();
@@ -34,14 +34,14 @@ namespace Tienda
         {
             try
             {
-                string cadena = "server=localhost;User= root; password=;database=abarrotes";
-                MySqlConnection cn = new MySqlConnection(cadena);
-                MySqlCommand cmd = new MySqlCommand(query, cn);
-                cn.Open();
-                MySqlDataAdapter da = new MySqlDataAdapter(cmd);
-                da.Fill(dstprincipal, tabla);
-                da.Dispose();
-                cn.Close();
+                using (MySqlConnection cn = ConexionDb.CrearConexion())
+                {
+                    MySqlCommand cmd = new MySqlCommand(query, cn);
+                    cn.Open();
+                    MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+                    da.Fill(dstprincipal, tabla);
+                    da.Dispose();
+                }
             }
             catch (Exception ex)
             {

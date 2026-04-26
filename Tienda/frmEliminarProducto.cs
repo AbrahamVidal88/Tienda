@@ -13,7 +13,7 @@ namespace Tienda
 {
     public partial class frmEliminarProducto : Form
     {
-        MySqlConnection conexion = new MySqlConnection("server=localhost;User= root; password=;database=abarrotes");
+        private readonly MySqlConnection conexion = ConexionDb.CrearConexion();
         public frmEliminarProducto()
         {
             InitializeComponent();

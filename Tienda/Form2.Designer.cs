@@ -107,20 +107,20 @@
             menuVertical.Location = new Point(0, 0);
             menuVertical.Margin = new Padding(3, 2, 3, 2);
             menuVertical.Name = "menuVertical";
-            menuVertical.Size = new Size(214, 538);
+            menuVertical.Size = new Size(239, 538);
             menuVertical.TabIndex = 3;
             // 
             // panelcontenedor
             // 
-            panelcontenedor.Controls.Add(btnproducts);
             panelcontenedor.Controls.Add(btnreportes);
+            panelcontenedor.Controls.Add(btnproducts);
             panelcontenedor.Controls.Add(btnpagos);
             panelcontenedor.Controls.Add(btnpuntoventa);
             panelcontenedor.Controls.Add(btncompras);
-            panelcontenedor.Location = new Point(23, 134);
+            panelcontenedor.Location = new Point(24, 134);
             panelcontenedor.Margin = new Padding(3, 2, 3, 2);
             panelcontenedor.Name = "panelcontenedor";
-            panelcontenedor.Size = new Size(214, 252);
+            panelcontenedor.Size = new Size(214, 238);
             panelcontenedor.TabIndex = 13;
             // 
             // btnproducts
@@ -133,7 +133,7 @@
             btnproducts.ForeColor = Color.Black;
             btnproducts.Image = (Image)resources.GetObject("btnproducts.Image");
             btnproducts.ImageAlign = ContentAlignment.MiddleLeft;
-            btnproducts.Location = new Point(24, 5);
+            btnproducts.Location = new Point(24, 6);
             btnproducts.Margin = new Padding(3, 2, 3, 2);
             btnproducts.Name = "btnproducts";
             btnproducts.Size = new Size(187, 44);

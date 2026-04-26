@@ -13,7 +13,7 @@ namespace Tienda
 {
     public partial class frmActualizarProducto : Form
     {
-        MySqlConnection conexion = new MySqlConnection("server=localhost;User= root; password=;database=abarrotes");
+        private readonly MySqlConnection conexion = ConexionDb.CrearConexion();
         public frmActualizarProducto()
         {
             InitializeComponent();

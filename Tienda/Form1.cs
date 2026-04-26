@@ -4,8 +4,7 @@ namespace Tienda
 {
     public partial class Form1 : Form
     {
-
-        MySqlConnection conexion = new MySqlConnection("server=localhost;User= root; password=;database=abarrotes");
+        private readonly MySqlConnection conexion = ConexionDb.CrearConexion();
         public Form1()
         {
             InitializeComponent();

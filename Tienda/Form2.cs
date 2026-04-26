@@ -1,5 +1,4 @@
-﻿using MySql.Data.MySqlClient;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,7 +12,6 @@ namespace Tienda
 {
     public partial class Form2 : Form
     {
-        MySqlConnection conexion = new MySqlConnection("server=localhost;User= root; password=;database=abarrotes");
         public Form2()
         {
             InitializeComponent();
@@ -42,61 +40,61 @@ namespace Tienda
         }
         private void openformchild(object childform)
         {
-            if (this.panelcontenedor.Controls.Count > 0)
-                this.panelcontenedor.Controls.RemoveAt(0);
+            if (this.jpanel.Controls.Count > 0)
+                this.jpanel.Controls.RemoveAt(0);
             principalProductos fh = childform as principalProductos;
             fh.TopLevel = false;
             fh.Dock = DockStyle.Fill;
-            this.panelcontenedor.Controls.Add(fh);
-            this.panelcontenedor.Tag = fh;
+            this.jpanel.Controls.Add(fh);
+            this.jpanel.Tag = fh;
             fh.Show();
         }
 
         private void openChild2(object childform)
         {
-            //if (this.panelContenedor.Controls.Count > 0)
-            //    this.panelContenedor.Controls.RemoveAt(0);
-            //frmAgregarProducto fh = childform as frmAgregarProducto;
-            //fh.TopLevel = false;
-            //fh.Dock = DockStyle.Fill;
-            //this.panelContenedor.Controls.Add(fh);
-            //this.panelContenedor.Tag = fh;
-            //fh.Show();
+            if (this.jpanel.Controls.Count > 0)
+                this.jpanel.Controls.RemoveAt(0);
+            frmAgregarProducto fh = childform as frmAgregarProducto;
+            fh.TopLevel = false;
+            fh.Dock = DockStyle.Fill;
+            this.jpanel.Controls.Add(fh);
+            this.jpanel.Tag = fh;
+            fh.Show();
         }
 
         private void openChild3(object childform)
         {
-            //if (this.panelContenedor.Controls.Count > 0)
-            //    this.panelContenedor.Controls.RemoveAt(0);
-            //frmActualizarProducto fh = childform as frmActualizarProducto;
-            //fh.TopLevel = false;
-            //fh.Dock = DockStyle.Fill;
-            //this.panelContenedor.Controls.Add(fh);
-            //this.panelContenedor.Tag = fh;
-            //fh.Show();
+            if (this.jpanel.Controls.Count > 0)
+                this.jpanel.Controls.RemoveAt(0);
+            frmActualizarProducto fh = childform as frmActualizarProducto;
+            fh.TopLevel = false;
+            fh.Dock = DockStyle.Fill;
+            this.jpanel.Controls.Add(fh);
+            this.jpanel.Tag = fh;
+            fh.Show();
         }
 
         private void openChild4(object childform)
         {
-            //if (this.panelContenedor.Controls.Count > 0)
-            //    this.panelContenedor.Controls.RemoveAt(0);
-            //frmEliminarProducto fh = childform as frmEliminarProducto;
-            //fh.TopLevel = false;
-            //fh.Dock = DockStyle.Fill;
-            //this.panelContenedor.Controls.Add(fh);
-            //this.panelContenedor.Tag = fh;
-            //fh.Show();
+            if (this.jpanel.Controls.Count > 0)
+                this.jpanel.Controls.RemoveAt(0);
+            frmEliminarProducto fh = childform as frmEliminarProducto;
+            fh.TopLevel = false;
+            fh.Dock = DockStyle.Fill;
+            this.jpanel.Controls.Add(fh);
+            this.jpanel.Tag = fh;
+            fh.Show();
         }
         private void OpenChild5(object childform)
         {
-            //if(this.panelContenedor.Controls.Count > 0)
-            //    this.panelContenedor.Controls.RemoveAt(0);
-            //frmPuntoVenta fh = childform as frmPuntoVenta;
-            //fh.TopLevel = false;
-            //fh.Dock = DockStyle.Fill;
-            //this.panelContenedor.Controls.Add(fh);
-            //this.panelContenedor.Tag = fh;
-            //fh.Show();
+            if (this.jpanel.Controls.Count > 0)
+                this.jpanel.Controls.RemoveAt(0);
+            frmPuntoVenta fh = childform as frmPuntoVenta;
+            fh.TopLevel = false;
+            fh.Dock = DockStyle.Fill;
+            this.jpanel.Controls.Add(fh);
+            this.jpanel.Tag = fh;
+            fh.Show();
         }
 
         private void btnproducts_Click(object sender, EventArgs e)
